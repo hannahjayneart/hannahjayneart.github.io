@@ -145,5 +145,7 @@ body {
   .cs-input { padding: 14px 16px; text-align: center; }
   .cs-btn { padding: 14px 20px; border-radius: 14px; }
   .cs-signup { margin-top: 40px; }
-  .cs-footer { margin-top: 48px; font-size: 13px; }
+  .cs-footer { margin-top: 48px; font-size: 13px; line-height: 1.5; }
+  .cs-footer__sep { display: none; }
+  .cs-footer__line { display: block; }
 }
