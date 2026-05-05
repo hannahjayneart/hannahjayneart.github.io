@@ -1,0 +1,149 @@
+/* assets/coming-soon.css — Hannah's Handiworks coming-soon page.
+   Ported from confetti.jsx ConfettiComingSoon (de-React'd, no JS). */
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #FFF4E0;
+  color: #23153C;
+  font-family: 'Bricolage Grotesque', 'Inter', system-ui, sans-serif;
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.cs-wrap {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 80px 32px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cs-logo {
+  font-family: 'Caprasimo', 'Fraunces', serif;
+  font-size: 72px;
+  line-height: 1;
+  letter-spacing: -0.025em;
+  color: #23153C;
+  margin: 0;
+  font-weight: 400;
+}
+
+.cs-logo em {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-weight: 900;
+  color: #E63E62;
+}
+
+.cs-signup {
+  margin-top: 64px;
+  width: 100%;
+  max-width: 520px;
+}
+
+.cs-eyebrow {
+  font-family: 'Bricolage Grotesque', 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #E63E62;
+  margin: 0 0 14px;
+}
+
+.cs-form {
+  display: flex;
+  gap: 10px;
+  align-items: stretch;
+  background: #FFFFFF;
+  border: 3px solid #23153C;
+  border-radius: 999px;
+  padding: 6px;
+  box-shadow: 5px 5px 0 #23153C;
+}
+
+.cs-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 12px 20px;
+  font-family: inherit;
+  font-size: 16px;
+  color: #23153C;
+  min-width: 0;
+}
+
+.cs-input::placeholder {
+  color: #23153C;
+  opacity: 0.5;
+}
+
+.cs-btn {
+  background: #23153C;
+  color: #FFFFFF;
+  border: none;
+  padding: 14px 26px;
+  border-radius: 999px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.cs-btn:hover {
+  opacity: 0.9;
+}
+
+.cs-fine {
+  font-size: 14px;
+  opacity: 0.65;
+  margin: 14px 0 0;
+}
+
+.cs-footer {
+  margin-top: 64px;
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+@media (max-width: 599px) {
+  .cs-wrap { padding: 56px 20px; }
+  .cs-logo { font-size: 40px; line-height: 1.05; white-space: normal; }
+  .cs-form {
+    flex-direction: column;
+    border-radius: 22px;
+    padding: 10px;
+    gap: 10px;
+    box-shadow: 4px 4px 0 #23153C;
+  }
+  .cs-input { padding: 14px 16px; text-align: center; }
+  .cs-btn { padding: 14px 20px; border-radius: 14px; }
+  .cs-signup { margin-top: 40px; }
+  .cs-footer { margin-top: 48px; font-size: 13px; }
+}
