@@ -40,6 +40,13 @@ body {
   align-items: center;
 }
 
+.cs-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
 .cs-logo {
   font-family: 'Caprasimo', 'Fraunces', serif;
   font-size: 72px;
@@ -133,7 +140,11 @@ body {
 }
 
 @media (max-width: 599px) {
-  .cs-wrap { padding: 56px 20px; }
+  .cs-wrap {
+    min-height: 100vh;
+    padding: 24px 20px 24px;
+  }
+  .cs-stack { margin: auto 0; }
   .cs-logo { font-size: 40px; line-height: 1.05; white-space: normal; }
   .cs-form {
     flex-direction: column;
@@ -145,7 +156,11 @@ body {
   .cs-input { padding: 14px 16px; text-align: center; }
   .cs-btn { padding: 14px 20px; border-radius: 14px; }
   .cs-signup { margin-top: 40px; }
-  .cs-footer { margin-top: 48px; font-size: 13px; line-height: 1.5; }
+  .cs-footer {
+    margin-top: 0;
+    font-size: 13px;
+    line-height: 1.5;
+  }
   .cs-footer__sep { display: none; }
   .cs-footer__line { display: block; }
 }

@@ -14,23 +14,25 @@
 </head>
 <body>
   <main class="cs-wrap">
-    <h1 class="cs-logo">Hannah's <em>Handiworks</em></h1>
+    <div class="cs-stack">
+      <h1 class="cs-logo">Hannah's <em>Handiworks</em></h1>
 
-    <section class="cs-signup">
-      <p class="cs-eyebrow">get on the list</p>
-      <form action="https://buttondown.com/api/emails/embed-subscribe/chasecrawford"
-            method="post"
-            target="popupwindow"
-            onsubmit="window.open('https://buttondown.com/chasecrawford','popupwindow')"
-            class="cs-form">
-        <label class="visually-hidden" for="cs-email">Email address</label>
-        <input id="cs-email" class="cs-input" type="email" name="email" placeholder="your@email.com" required>
-        <input type="hidden" name="tag" value="coming-soon">
-        <input type="text" name="hp" tabindex="-1" autocomplete="off" class="visually-hidden" aria-hidden="true">
-        <button type="submit" class="cs-btn">Notify me →</button>
-      </form>
-      <p class="cs-fine">One email, max. No spam. Pinky promise.</p>
-    </section>
+      <section class="cs-signup">
+        <p class="cs-eyebrow">get on the list</p>
+        <form action="https://buttondown.com/api/emails/embed-subscribe/chasecrawford"
+              method="post"
+              target="popupwindow"
+              onsubmit="window.open('https://buttondown.com/chasecrawford','popupwindow')"
+              class="cs-form">
+          <label class="visually-hidden" for="cs-email">Email address</label>
+          <input id="cs-email" class="cs-input" type="email" name="email" placeholder="your@email.com" required>
+          <input type="hidden" name="tag" value="coming-soon">
+          <input type="text" name="hp" tabindex="-1" autocomplete="off" class="visually-hidden" aria-hidden="true">
+          <button type="submit" class="cs-btn">Notify me →</button>
+        </form>
+        <p class="cs-fine">One email, max. No spam. Pinky promise.</p>
+      </section>
+    </div>
 
     <footer class="cs-footer"><span class="cs-footer__line">© 2026 Hannah's Handiworks</span><span class="cs-footer__sep"> · </span><span class="cs-footer__line">Made by hand in Louisville, KY</span></footer>
   </main>
