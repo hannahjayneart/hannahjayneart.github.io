@@ -1,0 +1,108 @@
+/* assets/resume-landing.css — Hannah Roach editorial style for /resume page. */
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #F4EFE0;
+  color: #0E0A1F;
+  font-family: 'DM Sans', sans-serif;
+  min-height: 100vh;
+}
+
+.rl-wrap {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 96px 32px 64px;
+  text-align: center;
+}
+
+.rl-name {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 76px;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 0.95;
+  margin: 0;
+}
+
+.rl-eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #3B1F6B;
+  margin: 28px 0 36px;
+}
+
+.rl-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.rl-card {
+  display: block;
+  background: #FFFFFF;
+  border: 1.5px dashed #0E0A1F;
+  padding: 28px 24px 22px;
+  text-align: left;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  border-bottom-width: 6px;
+  border-bottom-style: solid;
+  transition: transform 120ms ease;
+}
+
+.rl-card:hover {
+  transform: translateY(-2px);
+}
+
+.rl-card--color {
+  border-bottom-color: #B8DC2E;
+}
+
+.rl-card--bw {
+  border-bottom-color: #3B1F6B;
+}
+
+.rl-card__flower {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 16px;
+}
+
+.rl-card--color .rl-card__flower ellipse { fill: #FF3D8A; }
+.rl-card--color .rl-card__flower circle { fill: #B8DC2E; }
+.rl-card--bw .rl-card__flower ellipse { fill: #0E0A1F; }
+.rl-card--bw .rl-card__flower circle { fill: #FFFFFF; }
+
+.rl-card__title {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 0 0 6px;
+}
+
+.rl-card__desc {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0 0 18px;
+  opacity: 0.75;
+}
+
+.rl-card__cta {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 720px) {
+  .rl-wrap { padding: 56px 20px; }
+  .rl-name { font-size: 48px; }
+  .rl-cards { grid-template-columns: 1fr; }
+}
