@@ -6,127 +6,195 @@
   <title>Hannah Roach — Resume</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,600;1,9..144,700;1,9..144,900&family=JetBrains+Mono:wght@500;700&family=Newsreader:ital,wght@0,400;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="resume.css">
   <link rel="stylesheet" href="resume.color.css">
 </head>
 <body>
   <article class="slide">
 
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+      <symbol id="flw" viewBox="0 0 60 60">
+        <ellipse cx="30" cy="14" rx="7" ry="13" fill="currentColor" transform="rotate(0 30 30)"/>
+        <ellipse cx="30" cy="14" rx="7" ry="13" fill="currentColor" transform="rotate(60 30 30)"/>
+        <ellipse cx="30" cy="14" rx="7" ry="13" fill="currentColor" transform="rotate(120 30 30)"/>
+        <ellipse cx="30" cy="14" rx="7" ry="13" fill="currentColor" transform="rotate(180 30 30)"/>
+        <ellipse cx="30" cy="14" rx="7" ry="13" fill="currentColor" transform="rotate(240 30 30)"/>
+        <ellipse cx="30" cy="14" rx="7" ry="13" fill="currentColor" transform="rotate(300 30 30)"/>
+        <circle cx="30" cy="30" r="5" fill="var(--paper, #fff)"/>
+      </symbol>
+    </svg>
+
     <header class="band">
-      <div class="band__eyebrow">Resume · 2026</div>
-      <h1 class="band__name"><span>Hannah</span><span>Roach</span></h1>
-      <svg class="band__flower band__flower--a" viewBox="0 0 60 60" aria-hidden="true">
-        <ellipse cx="30" cy="14" rx="7" ry="13" transform="rotate(0 30 30)"/>
-        <ellipse cx="30" cy="14" rx="7" ry="13" transform="rotate(60 30 30)"/>
-        <ellipse cx="30" cy="14" rx="7" ry="13" transform="rotate(120 30 30)"/>
-        <ellipse cx="30" cy="14" rx="7" ry="13" transform="rotate(180 30 30)"/>
-        <ellipse cx="30" cy="14" rx="7" ry="13" transform="rotate(240 30 30)"/>
-        <ellipse cx="30" cy="14" rx="7" ry="13" transform="rotate(300 30 30)"/>
-        <circle cx="30" cy="30" r="5"/>
-      </svg>
+      <div class="band__eyebrow">
+        <svg width="11" height="11" aria-hidden="true"><use href="#flw"/></svg>
+        Resume · 2026
+      </div>
+
+      <h1 class="band__name">
+        <span class="band__name-first">Hannah</span>
+        <span class="band__name-last">
+          Roach
+          <svg viewBox="0 0 60 60" class="band__flower--name" style="fill:none" aria-hidden="true"><use href="#flw"/></svg>
+        </span>
+      </h1>
+
+      <div class="band__contact">
+        <span class="band__contact-item">hjroach01@gmail.com</span>
+        <span class="band__contact-item">502-523-7203</span>
+        <span class="band__contact-item">1514 Winter Ave, Louisville, KY 40204</span>
+      </div>
+
+      <svg viewBox="0 0 60 60" class="band__flower band__flower--tr1" aria-hidden="true"><use href="#flw"/></svg>
+      <svg viewBox="0 0 60 60" class="band__flower band__flower--tr2" aria-hidden="true"><use href="#flw"/></svg>
+      <svg viewBox="0 0 60 60" class="band__flower band__flower--mr"  aria-hidden="true"><use href="#flw"/></svg>
+      <svg viewBox="0 0 60 60" class="band__flower band__flower--bm"  aria-hidden="true"><use href="#flw"/></svg>
     </header>
+
+    <div class="wave" aria-hidden="true">
+      <svg viewBox="0 0 816 16" preserveAspectRatio="none">
+        <path d="M0,12 Q51,2 102,12 T204,12 T306,12 T408,12 T510,12 T612,12 T714,12 T816,12"/>
+      </svg>
+    </div>
 
     <main class="body">
 
       <aside>
         <section class="section">
-          <div class="section__title-wrap"><span class="section__num">01</span><h2 class="section__title">Skills</h2></div>
-          <ul class="skills">
-            <li>Experience collaborating in a team environment</li>
-            <li>Experience with customer support</li>
-            <li>Learns new skills quickly</li>
-            <li>Proficient in Microsoft Office</li>
-            <li>Experience scanning and copying documents</li>
+          <div class="section__head">
+            <span class="section__num">01</span>
+            <h2 class="section__title">Skills</h2>
+            <span class="section__deco">
+              <svg viewBox="0 0 60 60" class="section__deco-a" aria-hidden="true"><use href="#flw"/></svg>
+              <svg viewBox="0 0 60 60" class="section__deco-b" aria-hidden="true"><use href="#flw"/></svg>
+              <svg viewBox="0 0 60 60" class="section__deco-c" aria-hidden="true"><use href="#flw"/></svg>
+            </span>
+          </div>
+
+          <span class="skill-badge skill-badge--personal">Personal</span>
+          <ul class="skill-list">
+            <li><svg viewBox="0 0 60 60" aria-hidden="true"><use href="#flw"/></svg>Experience collaborating in a team environment</li>
+            <li><svg viewBox="0 0 60 60" aria-hidden="true"><use href="#flw"/></svg>Experience with customer support</li>
+            <li><svg viewBox="0 0 60 60" aria-hidden="true"><use href="#flw"/></svg>Learns new skills quickly</li>
+          </ul>
+
+          <span class="skill-badge skill-badge--office">Office</span>
+          <ul class="skill-list">
+            <li><svg viewBox="0 0 60 60" aria-hidden="true"><use href="#flw"/></svg>Proficient in Microsoft Office</li>
+            <li><svg viewBox="0 0 60 60" aria-hidden="true"><use href="#flw"/></svg>Experience scanning and copying documents</li>
           </ul>
         </section>
 
         <section class="section">
-          <div class="section__title-wrap"><h2 class="section__title">Personal</h2></div>
-          <div class="personal">
-            <div>hjroach01@gmail.com</div>
-            <div>502-523-7203</div>
-            <div>Louisville, KY</div>
+          <div class="section__head">
+            <span class="section__num">02</span>
+            <h2 class="section__title">Education</h2>
+            <span class="section__deco">
+              <svg viewBox="0 0 60 60" class="section__deco-a" aria-hidden="true"><use href="#flw"/></svg>
+              <svg viewBox="0 0 60 60" class="section__deco-b" aria-hidden="true"><use href="#flw"/></svg>
+              <svg viewBox="0 0 60 60" class="section__deco-c" aria-hidden="true"><use href="#flw"/></svg>
+            </span>
+          </div>
+
+          <div class="edu-card">
+            <div class="edu-card__school">Campbellsville University</div>
+            <div class="edu-card__date">Graduated 2021</div>
+            <div class="edu-card__degree">Bachelor of Arts in Liberal Arts</div>
+          </div>
+
+          <div class="edu-card">
+            <div class="edu-card__school">Assumption High School</div>
+            <div class="edu-card__date">Graduated 2015</div>
+            <div class="edu-card__degree">High School Curriculum</div>
           </div>
         </section>
       </aside>
 
-      <div>
-        <section class="section">
-          <div class="section__title-wrap"><span class="section__num">02</span><h2 class="section__title">Education</h2></div>
+      <section class="section">
+        <div class="section__head">
+          <span class="section__num">03</span>
+          <h2 class="section__title">Experience</h2>
+          <span class="section__deco">
+            <svg viewBox="0 0 60 60" class="section__deco-a" aria-hidden="true"><use href="#flw"/></svg>
+            <svg viewBox="0 0 60 60" class="section__deco-b" aria-hidden="true"><use href="#flw"/></svg>
+            <svg viewBox="0 0 60 60" class="section__deco-c" aria-hidden="true"><use href="#flw"/></svg>
+          </span>
+        </div>
 
-          <div class="education__entry">
-            <div class="education__school">Campbellsville University</div>
-            <div class="education__date">Graduated 2021</div>
-            <div class="education__degree">Bachelor of Arts in Liberal Arts</div>
-          </div>
+        <div class="experience-list">
 
-          <div class="education__entry">
-            <div class="education__school">Assumption High School</div>
-            <div class="education__date">Graduated 2015</div>
-            <div class="education__degree">High School Curriculum</div>
-          </div>
-        </section>
-
-        <section class="section">
-          <div class="section__title-wrap"><span class="section__num">03</span><h2 class="section__title">Experience</h2></div>
-
-          <div class="experience__entry">
-            <div class="experience__head">
-              <div><span class="experience__company">Pitaya</span> · <span class="experience__role">Store Manager</span></div>
-              <span class="experience__dates">Nov 2025 – Present</span>
+          <div class="exp-entry">
+            <span class="exp-entry__bullet"><svg viewBox="0 0 60 60" aria-hidden="true"><use href="#flw"/></svg></span>
+            <div class="exp-entry__head">
+              <div class="exp-entry__company">Pitaya</div>
+              <div class="exp-entry__dates">Nov 2025 – Present</div>
             </div>
-            <ul class="experience__bullets">
-              <li>Manage inventory across product categories, including ordering &amp; stock tracking</li>
-              <li>Oversee building operations, coordinating vendors for maintenance, repairs, and supply procurement</li>
-              <li>Recruit, hire, train, and supervise a small team of employees, handling scheduling and performance management</li>
+            <div class="exp-entry__role">Store Manager</div>
+            <ul class="exp-bullets">
+              <li><svg viewBox="0 0 60 60" aria-hidden="true"><use href="#flw"/></svg>Manage inventory across product categories, including ordering &amp; stock tracking</li>
+              <li><svg viewBox="0 0 60 60" aria-hidden="true"><use href="#flw"/></svg>Oversee building operations, coordinating vendors for maintenance, repairs, and supply procurement</li>
+              <li><svg viewBox="0 0 60 60" aria-hidden="true"><use href="#flw"/></svg>Recruit, hire, train, and supervise a small team of employees, handling scheduling and performance management</li>
             </ul>
           </div>
 
-          <div class="experience__entry">
-            <div class="experience__head">
-              <div><span class="experience__company">Hey Dude</span> · <span class="experience__role">Assistant Store Manager</span></div>
-              <span class="experience__dates">May 2023 – Nov 2025</span>
+          <div class="exp-entry">
+            <span class="exp-entry__bullet"><svg viewBox="0 0 60 60" aria-hidden="true"><use href="#flw"/></svg></span>
+            <div class="exp-entry__head">
+              <div class="exp-entry__company">Hey Dude</div>
+              <div class="exp-entry__dates">May 2023 – Nov 2025</div>
             </div>
-            <ul class="experience__bullets">
-              <li>Money handling and management of employees</li>
-              <li>Maintaining a clean and organized sales floor</li>
-              <li>Communicating sales goals and promotions from corporate to employees / customers</li>
+            <div class="exp-entry__role">Assistant Store Manager</div>
+            <ul class="exp-bullets">
+              <li><svg viewBox="0 0 60 60" aria-hidden="true"><use href="#flw"/></svg>Money handling and management of employees</li>
+              <li><svg viewBox="0 0 60 60" aria-hidden="true"><use href="#flw"/></svg>Maintaining a clean and organized sales floor</li>
+              <li><svg viewBox="0 0 60 60" aria-hidden="true"><use href="#flw"/></svg>Communicating sales goals and promotions from corporate to employees / customers</li>
             </ul>
           </div>
 
-          <div class="experience__entry">
-            <div class="experience__head">
-              <div><span class="experience__company">Journeys</span> · <span class="experience__role">Co-Manager</span></div>
-              <span class="experience__dates">Dec 2022 – Apr 2023</span>
+          <div class="exp-entry">
+            <span class="exp-entry__bullet"><svg viewBox="0 0 60 60" aria-hidden="true"><use href="#flw"/></svg></span>
+            <div class="exp-entry__head">
+              <div class="exp-entry__company">Journeys</div>
+              <div class="exp-entry__dates">Dec 2022 – Apr 2023</div>
             </div>
-            <ul class="experience__bullets">
-              <li>Knowledge of current fashion trends</li>
-              <li>Money and employee management</li>
-              <li>Sales knowledge with abilities to upsell customers with socks and accessories</li>
+            <div class="exp-entry__role">Co-Manager</div>
+            <ul class="exp-bullets">
+              <li><svg viewBox="0 0 60 60" aria-hidden="true"><use href="#flw"/></svg>Knowledge of current fashion trends</li>
+              <li><svg viewBox="0 0 60 60" aria-hidden="true"><use href="#flw"/></svg>Money and employee management</li>
+              <li><svg viewBox="0 0 60 60" aria-hidden="true"><use href="#flw"/></svg>Sales knowledge with abilities to upsell customers with socks and accessories</li>
             </ul>
           </div>
 
-          <div class="experience__entry">
-            <div class="experience__head">
-              <div><span class="experience__company">Fleur de Tea</span> · <span class="experience__role">Barista</span></div>
-              <span class="experience__dates">Nov 2021 – Nov 2022</span>
+          <div class="exp-entry">
+            <span class="exp-entry__bullet"><svg viewBox="0 0 60 60" aria-hidden="true"><use href="#flw"/></svg></span>
+            <div class="exp-entry__head">
+              <div class="exp-entry__company">Fleur de Tea</div>
+              <div class="exp-entry__dates">Nov 2021 – Nov 2022</div>
             </div>
-            <ul class="experience__bullets">
-              <li>Interacted with customers and filled orders in fast-paced environment</li>
-              <li>Collaborated with team members to maintain a productive and positive work environment</li>
-              <li>Responsible for handling and counting money</li>
+            <div class="exp-entry__role">Barista</div>
+            <ul class="exp-bullets">
+              <li><svg viewBox="0 0 60 60" aria-hidden="true"><use href="#flw"/></svg>Interacted with customers and filled orders in fast-paced environment</li>
+              <li><svg viewBox="0 0 60 60" aria-hidden="true"><use href="#flw"/></svg>Collaborated with team members to maintain a productive and positive work environment</li>
+              <li><svg viewBox="0 0 60 60" aria-hidden="true"><use href="#flw"/></svg>Responsible for handling and counting money</li>
             </ul>
           </div>
-        </section>
-      </div>
+
+        </div>
+      </section>
 
     </main>
 
     <div class="foot">
       <div class="foot__eyebrow">↳ Filter: Vibrant Colors</div>
       <div class="foot__msg">View the printer-friendly version at <a href="https://hannahjayne.art/resume-print.pdf">hannahjayne.art/resume-print.pdf</a></div>
-      <div class="foot__page">p. 01 / 01</div>
+    </div>
+
+    <div class="mini-foot">
+      <span class="mini-foot__left">
+        <svg viewBox="0 0 60 60" aria-hidden="true"><use href="#flw"/></svg>
+        HR · 2026
+      </span>
+      <span class="mini-foot__right">P. 01 / 01</span>
     </div>
 
   </article>

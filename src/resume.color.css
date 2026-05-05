@@ -1,16 +1,18 @@
-/* src/resume.color.css — vibrant palette for the colored resume. */
+/* src/resume.color.css — vibrant palette for the colored resume.
+   Flower fills cascade via CSS `color` (currentColor) on the SVG host
+   elements; no need for fill: rules here. */
 
 :root {
   --bg: #F4EFE0;       /* page background (cream) */
-  --paper: #FFFFFF;    /* footer card background */
+  --paper: #FFFFFF;    /* footer card background, flower centers */
   --ink: #0E0A1F;      /* primary text */
   --accent: #3B1F6B;   /* deep purple — section nums, dates, role */
-  --pop: #B8DC2E;      /* lime accent (flowers) */
-  --hot: #FF3D8A;      /* hot pink accent (flowers) */
+  --pop: #B8DC2E;      /* lime accent */
+  --hot: #FF3D8A;      /* hot pink accent */
   --bandBg: #3B1F6B;   /* header band background — deep purple */
   --bandFg: #FFFFFF;   /* header band text — white */
 }
 
-/* Decorative flower mix: petals pop, center hot */
-.band__flower--a ellipse { fill: var(--pop); }
-.band__flower--a circle { fill: var(--hot); }
+/* The "Roach" half of the wordmark renders in lime against the purple band,
+   matching the original. Hannah stays white via .band__name-first. */
+.band__name-last { color: var(--pop); }

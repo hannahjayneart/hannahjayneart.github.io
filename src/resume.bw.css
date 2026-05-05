@@ -11,15 +11,25 @@
   --bandFg: #000000;   /* black band text */
 }
 
-/* The band background is white-on-white, so add a thin ink edge that
-   follows the masked curve — gives the otherwise-invisible band visible
-   structure where it meets the body. */
+/* The band background is white-on-white. Add a thin ink edge that follows
+   the masked curve — gives the otherwise-invisible band visible structure
+   where it meets the body. */
 .band {
   border-bottom: 1.5px solid var(--ink);
 }
 
-/* Flower in B&W: ink petals; center is white (matches the white band, so
-   the center reads as a "hole" in the petals — same silhouette as the
-   color version, just monochrome). */
-.band__flower--a ellipse { fill: var(--ink); }
-.band__flower--a circle { fill: var(--bg); }
+/* The eyebrow's "Resume · 2026" mono text uses --pop in shared CSS, which
+   is ink in B&W mode. Override to give the eyebrow color faint contrast
+   on the white band. */
+.band__eyebrow { color: var(--ink); }
+
+/* Wave: in B&W mode, render as ink instead of hot-pink */
+.wave path { stroke: var(--ink); }
+
+/* Skills badges in B&W: invert (white bg + ink border) so they're still
+   visible on white page bg */
+.skill-badge--personal,
+.skill-badge--office {
+  background: var(--ink);
+  color: var(--paper);
+}
