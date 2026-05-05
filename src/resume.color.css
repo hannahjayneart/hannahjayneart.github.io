@@ -1,0 +1,16 @@
+/* src/resume.color.css — vibrant palette for the colored resume. */
+
+:root {
+  --bg: #F4EFE0;       /* page background (cream) */
+  --paper: #FFFFFF;    /* footer card background */
+  --ink: #0E0A1F;      /* primary text */
+  --accent: #3B1F6B;   /* deep purple — section nums, dates, role */
+  --pop: #B8DC2E;      /* lime accent (flowers) */
+  --hot: #FF3D8A;      /* hot pink accent (flowers) */
+  --bandBg: #3B1F6B;   /* header band background — deep purple */
+  --bandFg: #FFFFFF;   /* header band text — white */
+}
+
+/* Decorative flower mix: petals pop, center hot */
+.band__flower--a ellipse { fill: var(--pop); }
+.band__flower--a circle { fill: var(--hot); }
