@@ -34,8 +34,7 @@ The two surfaces use distinct visual identities (different palettes, fonts, tone
 ├── favicon-32.png              # 32×32 PNG fallback (built artifact, committed)
 ├── CNAME                       # Custom domain config (hannahjayne.art)
 ├── .nojekyll                   # GH Pages: skip Jekyll, serve files as-is
-├── package.json                # Node dev deps + build script
-└── Claude Design Exports/      # Original design references — DO NOT MODIFY
+└── package.json                # Node dev deps + build script
 ```
 
 ## Common tasks
@@ -126,11 +125,3 @@ Wait 30–90 seconds, then check <https://hannahjayne.art>. If you don't see you
 - **Node 20+** and **Playwright** for PDF generation (devDep only — never shipped).
 - **Google Fonts**: DM Sans + JetBrains Mono (resume); Caprasimo + Fraunces + Inter + Bricolage Grotesque (coming-soon).
 
-## Design references
-
-The `Claude Design Exports/` folder contains the original design source files (React-rendered HTMLs, Hannah Store mockups, JSX). These are **reference only** — do not edit them, and do not point any `<link>` or `<script>` at them. The live site re-implements those designs in plain HTML/CSS.
-
-## Spec & plan
-
-- Design spec: `docs/superpowers/specs/2026-05-05-hannahjayne-art-design.md`
-- Implementation plan: `docs/superpowers/plans/2026-05-05-hannahjayne-art-website.md`

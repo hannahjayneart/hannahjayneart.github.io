@@ -22,5 +22,9 @@ playwright/.cache/
 .env
 .env.local
 
-# Bundled React/Babel runtime deps from "Save Page As" exports — not source
-Claude Design Exports/*_files/
+# Local-only design references and dev artifacts (kept on disk, not pushed)
+Claude Design Exports/
+docs/
+
+# Local preview-render scratch files
+tmp-*
