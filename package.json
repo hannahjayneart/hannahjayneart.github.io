@@ -1,0 +1,13 @@
+{
+  "name": "hannahjayne-art",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "Static site for hannahjayne.art (Hannah's Handiworks coming-soon + Hannah Roach resume hosting).",
+  "scripts": {
+    "build:pdfs": "node scripts/build-pdfs.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.49.0"
+  }
+}
