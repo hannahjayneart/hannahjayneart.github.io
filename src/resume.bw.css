@@ -1,0 +1,25 @@
+/* src/resume.bw.css — monochrome palette for the print-friendly resume. */
+
+:root {
+  --bg: #FFFFFF;
+  --paper: #FFFFFF;
+  --ink: #000000;
+  --accent: #000000;   /* mono — no separate accent color */
+  --pop: #000000;
+  --hot: #000000;
+  --bandBg: #FFFFFF;   /* white band over white page */
+  --bandFg: #000000;   /* black band text */
+}
+
+/* The band background is white-on-white, so add a thin ink edge that
+   follows the masked curve — gives the otherwise-invisible band visible
+   structure where it meets the body. */
+.band {
+  border-bottom: 1.5px solid var(--ink);
+}
+
+/* Flower in B&W: ink petals; center is white (matches the white band, so
+   the center reads as a "hole" in the petals — same silhouette as the
+   color version, just monochrome). */
+.band__flower--a ellipse { fill: var(--ink); }
+.band__flower--a circle { fill: var(--bg); }
