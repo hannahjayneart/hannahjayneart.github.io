@@ -60,11 +60,12 @@ body {
 
 .band__name {
   margin: 6px 0 0;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 92px;
-  font-weight: 700;
-  line-height: 0.94;
-  letter-spacing: -0.025em;
+  font-family: 'Fraunces', 'Newsreader', serif;
+  font-size: 96px;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 0.98;
+  letter-spacing: -0.01em;
   display: flex;
   flex-direction: column;
 }
@@ -107,21 +108,21 @@ body {
 .band__flower--tr1 { top: 18px;  right: 56px; width: 36px; height: 36px; transform: rotate(20deg); color: var(--pop); }
 .band__flower--tr2 { top: 56px;  right: 30px; width: 22px; height: 22px; transform: rotate(60deg); color: var(--hot); }
 .band__flower--mr  { top: 110px; right: 90px; width: 18px; height: 18px; transform: rotate(30deg); color: var(--pop); }
-.band__flower--bm  { bottom: 24px; left: 56%; transform: translateX(-50%) rotate(15deg); width: 18px; height: 18px; color: var(--hot); }
+.band__flower--bm  { bottom: 60px; left: 50%; transform: translateX(-50%) rotate(15deg); width: 22px; height: 22px; color: var(--hot); }
 .band__eyebrow svg { color: var(--pop); }
 
 /* ── Wave decoration below the band ──────────────────────────────────── */
 
 .wave {
   position: absolute;
-  top: 312px;
+  top: 301px;
   left: 0;
   right: 0;
-  height: 16px;
+  height: 28px;
   pointer-events: none;
 }
 
-.wave svg { width: 100%; height: 100%; display: block; }
+.wave svg { width: 100%; height: 100%; display: block; overflow: visible; }
 .wave path { stroke: var(--hot); stroke-width: 2.5; fill: none; }
 
 /* ── Body grid ────────────────────────────────────────────────────────── */
@@ -271,6 +272,7 @@ body {
   justify-content: center;
 }
 .exp-entry__bullet svg { width: 22px; height: 22px; color: var(--hot); }
+.exp-entry:nth-child(even) .exp-entry__bullet svg { color: var(--pop); }
 
 .exp-entry__head {
   display: flex;
@@ -357,7 +359,6 @@ body {
 .foot__msg {
   font-size: 11px;
   margin-left: auto;
-  margin-right: auto;
 }
 
 .foot__msg a {
