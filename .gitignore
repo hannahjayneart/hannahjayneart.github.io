@@ -21,3 +21,6 @@ playwright/.cache/
 # Local env / secrets
 .env
 .env.local
+
+# Bundled React/Babel runtime deps from "Save Page As" exports — not source
+Claude Design Exports/*_files/
